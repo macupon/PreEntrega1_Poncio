@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+  }
+.navbar {
+    background-color: rgb(108, 195, 184);
+    color: white;
+    padding: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+    
+}
+
+.nav-custom-purple .nav-link, .nav-custom-purple .nav-link.active {
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 25px;
+    
+}
+.apliques {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 70px;
+    
+}
+
+.nav-custom-purple .nav-link.active {
+    color: white;
+    text-decoration: underline;
+}

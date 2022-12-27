@@ -1,0 +1,27 @@
+.foot {
+    color: white;
+    padding: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: auto;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.social a {
+    color: black;
+}
+
+/*  
+.social_fb{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0px;
+    
+} */
