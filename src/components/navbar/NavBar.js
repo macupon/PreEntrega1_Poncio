@@ -4,7 +4,6 @@
 import styles from "./NavBar.css";
 import CardWidget from "../cardWidget/CardWidget.js";
 import {FaStar} from "react-icons/fa";
-// import portada from "../img/prin.jpg";
 
 
 
@@ -54,7 +53,7 @@ const NavBar = (props) => {
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  Categorias
+                  Productos
                 </a>
                 <ul className="dropdown-menu">
                   <li>
