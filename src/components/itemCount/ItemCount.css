@@ -1,0 +1,44 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.count_box{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    max-width: 150px;
+}
+
+.count_number {
+    font-size: 19px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.button-count button {
+    font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 14px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(108, 195, 184);
+    width: 30px;
+	height: 30px;
+	cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#onadd {
+    width: 90px;
+	height: 30px;
+    border-radius: 6%;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.button-count-child {
+    display: flex;
+    align-items: baseline;
+}
