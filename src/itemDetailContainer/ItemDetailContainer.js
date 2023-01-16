@@ -27,9 +27,14 @@ const  ItemDetailContainer = () => {
     //         .then(apliques=>setApliques(<ItemDetail key={apliques.id} id={"producto" + apliques.id} data={apliques}/>))
     // },[productoId])
     // retorno que se va a randerizar
-    // useEffect (() => {
-    //     apliques=>setApliques(<ItemDetail key={apliques.id} id={"producto" + apliques.id} data={apliques}/>)
-    // },[productoId])
+
+            // ${productoId}`)
+
+        fetch(`/data.json`) 
+            .then(res=>res.json())
+            .then(apliques=>setApliques(<ItemDetail key={apliques.id} id={"producto" + apliques.id} data={apliques}/>))
+    },[productoId]
+  
     return (
        <p>
         {apliques}
