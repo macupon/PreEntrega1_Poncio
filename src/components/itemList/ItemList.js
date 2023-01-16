@@ -31,7 +31,7 @@ const  ItemList = (props) => { //Funcion constructora
         {
            id:1,
            nombre:"Coco",
-           medida:"1x1",
+           descripcion:"1x1",
            precio: 3000,
            categoria:"Disney",
            stock:"4",

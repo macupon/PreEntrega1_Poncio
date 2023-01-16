@@ -18,19 +18,19 @@ import ItemList from '../itemList/ItemList'
 const  ItemListContainer = (props) => { //Funcion constructora
 
    
-    const [categoria, setCategoria] = useState("all")
+    const [category, setCategory] = useState("all")
 
-    const categoriaPersonajes = () => {
-        setCategoria("Personajes")
+    const categoryPersonajes = () => {
+        setCategory("Personajes")
     }
-    const categoriaPersona = () => {
-        setCategoria("Persona")
+    const categoryPersona = () => {
+        setCategory("Persona")
     }
-    const categoriaDisney = () => {
-        setCategoria("Disney")
+    const categoryDisney = () => {
+        setCategory("Disney")
     }
-    const categoriaAll = () => {
-        setCategoria("all")
+    const categoryAll = () => {
+        setCategory("all")
     }
 
 
@@ -39,20 +39,20 @@ const  ItemListContainer = (props) => { //Funcion constructora
     <div>
         <ul className='nav justify-content-end'>
             <li className='nav-item'>
-                <button className='nav-link button_cat' onClick={categoriaPersonajes}>Personajes</button>
+                <button className='nav-link button_cat' onClick={categoryPersonajes}>Personajes</button>
              </li>
             <li className='nav-item'>
-                <button className='nav-link button_cat' onClick={categoriaPersona}>Persona</button>
+                <button className='nav-link button_cat' onClick={categoryPersona}>Persona</button>
             </li>
             <li className='nav-item'>
-                <button className='nav-link button_cat' onClick={categoriaDisney}>Disney</button>
+                <button className='nav-link button_cat' onClick={categoryDisney}>Disney</button>
             </li>
             <li className='nav-item'>
-                <button className='nav-link button_cat' onClick={categoriaAll}>Todos</button>
+                <button className='nav-link button_cat' onClick={categoryAll}>Todos</button>
             </li>
          </ul>
         <div className='fondo_cards'>
-        <ItemList categoriaName={categoria}/>
+        <ItemList categoriaName={category}/>
         </div>
     </div>
     )

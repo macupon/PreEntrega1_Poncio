@@ -1,0 +1,92 @@
+{"apliques":[{
+    "id":1,
+    "nombre":"Coco",
+    "medida":"1x1",
+    "precio": 3000,
+    "categoria":"Disney",
+    "stock":"4",
+    "img": `${imagen1}`
+
+ },  {
+     "id":2,
+     "nombre":"Goku",
+     "medida":"1x1",
+     "precio":3000,
+     "categoria":"Personajes",
+     "stock":"4",
+     "img": `${imagen2}`
+
+  },  {
+     "id":3,
+     "nombre":"Guason",
+     "medida":"1x1",
+     "precio":3000,
+     "categoria":"Personajes",
+     "stock":"4",
+     "img": `${imagen3}`
+
+  },  {
+     "id":4,
+     "nombre":"Krosti",
+     "medida":"1x1",
+     "precio":3000,
+     "categoria":"Personaje",
+     "stock":"4",
+     "img": `${imagen4}`
+
+  },  {
+     "id":5,
+     "nombre":"Simba",
+     "":"1x1",
+     "precio":3000,
+     "categoria":"Disney",
+     "stock":"4",
+     "img": `${imagen5}`
+
+  },  {
+     "id":6,
+     "nombre":"Malefica",
+     "":"1x1",
+     "precio":3000,
+     "categoria":"Disney",
+     "stock":"4",
+     "img": `${imagen6}`
+
+  },  {
+     "id":7,
+     "nombre":"Maradona",
+     "":"1x1",
+     "precio":3000,
+     "categoria":"Persona",
+     "stock":"4",
+     "img": `${imagen7}`
+
+  },  {
+     "id":8,
+     "nombre":"Mario",
+     "":"1x1",
+     "precio":3000,
+     "categoria":"Personajes",
+     "stock":"4",
+     "img": `${imagen8}`
+
+  },  {
+     "id":9,
+     "nombre":"Monster",
+     "":"1x1",
+     "precio":3000,
+     "categoria":"Personajes",
+     "stock":"4",
+     "img": `${imagen9}`
+
+  },  {
+     "id":10,
+     "nombre":"Snoopy",
+     "":"1x1",
+     "precio":3000,
+     "categoria":"Personajes",
+     "stock":"4",
+     "img": `${imagen10}`
+
+  }
+]}

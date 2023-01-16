@@ -20,13 +20,16 @@ const  ItemDetailContainer = () => {
     const { productoId } = useParams ()
     //Funcion constructora
     
-    useEffect(()=>{
+    // useEffect(()=>{
 
-        fetch(`https://fakestoreapi.com/products/${productoId}`)
-            .then(res=>res.json())
-            .then(apliques=>setApliques(<ItemDetail key={apliques.id} id={"producto" + apliques.id} data={apliques}/>))
-    },[productoId])
+    //     fetch(`https://fakestoreapi.com/products/${productoId}`)
+    //         .then(res=>res.json())
+    //         .then(apliques=>setApliques(<ItemDetail key={apliques.id} id={"producto" + apliques.id} data={apliques}/>))
+    // },[productoId])
     // retorno que se va a randerizar
+    // useEffect (() => {
+    //     apliques=>setApliques(<ItemDetail key={apliques.id} id={"producto" + apliques.id} data={apliques}/>)
+    // },[productoId])
     return (
        <p>
         {apliques}
