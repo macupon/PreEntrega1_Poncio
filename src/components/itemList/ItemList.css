@@ -1,0 +1,7 @@
+.grids {
+    display:flex;
+    width:95%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}

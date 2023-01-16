@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Pacifico&family=Rokkitt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
+
+ .card_style {
+    font-size: 15px;
+    width: 20rem;    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+} 
+.card-price{
+    font-size: 26px;
+    color: orange;
+    display: flex;
+}
+
+.bloque_count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_card {
+    font-size: 40px;
+    color: #303952;
+    display:flex;
+    justify-content:space-between;
+    align-items: baseline;
+    font-family: 'bebas neue';
+    
+}
+
+.product_details {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.card-text{
+    color: #596275;
+}

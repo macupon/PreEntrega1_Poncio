@@ -1,6 +1,10 @@
 /* ####################################################
                     IMPORTACIONES
 ######################################################*/
+// Modulo
+
+import { Link } from 'react-router-dom';
+
 // Estilo
 import './NavBar.css';
 // import styles from "./NavBar.css";
@@ -34,44 +38,25 @@ const NavBar = (props) => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active px-3" aria-current="page">
-                  Home
-                </a>
+                <Link className="nav-link  px-3" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link px-3" >
-                  Nosotros
-                </a>
+                <Link className="nav-link  px-3" aria-current="page" to="/nosotros">Nosotros</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link px-3" >
-                  Presupuesto
-                </a>
+                <Link className="nav-link  px-3" aria-current="page" to="/presupuesto">Presupuesto</Link>
               </li>
               <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle px-3"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Productos
-                </a>
+              <Link className="nav-link dropdown-toggle px-3" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Productos</Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item">
-                      Personajes
-                    </a>
+                  <Link className="dropdown-item" aria-current="page" to="/productos">Personas</Link>
                   </li>
                   <li>
-                    <a className="dropdown-item">
-                      Famosos
-                    </a>
+                  <Link className="dropdown-item" aria-current="page" to="/productos">Personajes</Link>
                   </li>
                   <li>
-                    <a className="dropdown-item">
-                      Nombres 
-                    </a>
+                  <Link className="dropdown-item" aria-current="page" to="/productos">Disney</Link>
                   </li>
                 </ul>
               </li>

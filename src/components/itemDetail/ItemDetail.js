@@ -1,17 +1,19 @@
 /* ####################################################
                     IMPORTACIONES
 ######################################################*/
-// Estilo
-import './Item.css'
+// Modulos
 import { Link } from 'react-router-dom'
 // Componentes
 import ItemCount from '../itemCount/ItemCount'
+// Estilos
+import './ItemDetail.css'
 
+// Core
 
 /* ####################################################
                     LOGICA
 ######################################################*/
-const  Item = (props) => { //Funcion constructora
+const  ItemDetail = (props) => { //Funcion constructora
     // retorno que se va a randerizar
     const {nombre, medida, precio, stock, img, id} = props.data
     return (
@@ -34,7 +36,6 @@ const  Item = (props) => { //Funcion constructora
             </div>
             </div>
         </div>
-    
     )
 }
 
@@ -42,4 +43,4 @@ const  Item = (props) => { //Funcion constructora
 /* ####################################################
                     EXPORTACIONES
 ######################################################*/
-export default Item
+export default ItemDetail

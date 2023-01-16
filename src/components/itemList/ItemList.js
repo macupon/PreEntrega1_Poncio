@@ -6,6 +6,16 @@
 import './ItemList.css'
 // Componentes
 import Item from '../item/Item'
+import imagen1 from '../../assets/img/coco.jpg'
+import imagen2 from '../../assets/img/goku.jpg'
+import imagen3 from '../../assets/img/guason.jpg'
+import imagen4 from '../../assets/img/krosti.jpg'
+import imagen5 from '../../assets/img/leon.jpg'
+import imagen6 from '../../assets/img/malefica.jpg'
+import imagen7 from '../../assets/img/maradona.jpg'
+import imagen8 from '../../assets/img/mario.jpg'
+import imagen9 from '../../assets/img/monster.jpg'
+import imagen10 from '../../assets/img/snoopy.jpg'
 
 
 /* ####################################################
@@ -24,39 +34,44 @@ const  ItemList = (props) => { //Funcion constructora
            medida:"1x1",
            precio: 3000,
            categoria:"Disney",
-           stock:"4"
+           stock:"4",
+           img: `${imagen1}`
 
         },  {
             id:2,
-            nombre:"Guason",
-            medida:"1x1",
-            precio:3000,
-            categoria:"Persona",
-            stock:"4"
- 
-         },  {
-            id:3,
-            nombre:"Mario",
-            medida:"1x1",
-            precio:3000,
-            categoria:"Personajes",
-            stock:"4"
- 
-         },  {
-            id:4,
-            nombre:"Simba",
-            medida:"1x1",
-            precio:3000,
-            categoria:"Disney",
-            stock:"4"
- 
-         },  {
-            id:5,
             nombre:"Goku",
             medida:"1x1",
             precio:3000,
             categoria:"Personajes",
-            stock:"4"
+            stock:"4",
+            img: `${imagen2}`
+ 
+         },  {
+            id:3,
+            nombre:"Guason",
+            medida:"1x1",
+            precio:3000,
+            categoria:"Personajes",
+            stock:"4",
+            img: `${imagen3}`
+ 
+         },  {
+            id:4,
+            nombre:"Krosti",
+            medida:"1x1",
+            precio:3000,
+            categoria:"Personaje",
+            stock:"4",
+            img: `${imagen4}`
+ 
+         },  {
+            id:5,
+            nombre:"Simba",
+            medida:"1x1",
+            precio:3000,
+            categoria:"Disney",
+            stock:"4",
+            img: `${imagen5}`
  
          },  {
             id:6,
@@ -64,7 +79,8 @@ const  ItemList = (props) => { //Funcion constructora
             medida:"1x1",
             precio:3000,
             categoria:"Disney",
-            stock:"4"
+            stock:"4",
+            img: `${imagen6}`
  
          },  {
             id:7,
@@ -72,31 +88,35 @@ const  ItemList = (props) => { //Funcion constructora
             medida:"1x1",
             precio:3000,
             categoria:"Persona",
-            stock:"4"
+            stock:"4",
+            img: `${imagen7}`
  
          },  {
             id:8,
-            nombre:"Krosti",
+            nombre:"Mario",
             medida:"1x1",
             precio:3000,
             categoria:"Personajes",
-            stock:"4"
+            stock:"4",
+            img: `${imagen8}`
  
          },  {
             id:9,
-            nombre:"Snoopi",
-            medida:"1x1",
-            precio:3000,
-            categoria:"Personajes",
-            stock:"4"
- 
-         },  {
-            id:10,
             nombre:"Monster",
             medida:"1x1",
             precio:3000,
-            categoria:"Disney",
-            stock:"4"
+            categoria:"Personajes",
+            stock:"4",
+            img: `${imagen9}`
+ 
+         },  {
+            id:10,
+            nombre:"Snoopy",
+            medida:"1x1",
+            precio:3000,
+            categoria:"Personajes",
+            stock:"4",
+            img: `${imagen10}`
  
          }
     ]
@@ -121,8 +141,10 @@ const  ItemList = (props) => { //Funcion constructora
     
     
         return (
-       <div>
+       <div className='grids'>
+        
         {apliquesRenderizables}
+        
        </div>
     ) 
 }

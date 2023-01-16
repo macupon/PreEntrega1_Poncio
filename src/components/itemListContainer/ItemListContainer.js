@@ -4,18 +4,20 @@
 // Modulos
 import { useState } from 'react'
 
+// import "bootstrap/dist/css/bootstrap.min.css"
+
 //Estilo
 import './ItemListContainer.css'
 //Componentes
 import ItemList from '../itemList/ItemList'
 
 
-
 /* ####################################################
-                    LOGICA
+                    LOGICA 
 ######################################################*/
 const  ItemListContainer = (props) => { //Funcion constructora
-    // retorno que se va a randerizar
+
+   
     const [categoria, setCategoria] = useState("all")
 
     const categoriaPersonajes = () => {
@@ -33,15 +35,26 @@ const  ItemListContainer = (props) => { //Funcion constructora
 
 
     return (
-       <div>
-        <p>Item List container</p>
-        <button onClick={categoriaPersonajes}>Personajes</button>
-        <button onClick={categoriaPersona}>Persona</button>
-        <button onClick={categoriaDisney}>Disney</button>
-        <button onClick={categoriaAll}>Todos</button>
-
+    
+    <div>
+        <ul className='nav justify-content-end'>
+            <li className='nav-item'>
+                <button className='nav-link button_cat' onClick={categoriaPersonajes}>Personajes</button>
+             </li>
+            <li className='nav-item'>
+                <button className='nav-link button_cat' onClick={categoriaPersona}>Persona</button>
+            </li>
+            <li className='nav-item'>
+                <button className='nav-link button_cat' onClick={categoriaDisney}>Disney</button>
+            </li>
+            <li className='nav-item'>
+                <button className='nav-link button_cat' onClick={categoriaAll}>Todos</button>
+            </li>
+         </ul>
+        <div className='fondo_cards'>
         <ItemList categoriaName={categoria}/>
-       </div>
+        </div>
+    </div>
     )
 }
 

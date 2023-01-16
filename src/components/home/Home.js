@@ -1,18 +1,23 @@
 /* ####################################################
                     IMPORTACIONES
 ######################################################*/
-import './Hooks.css'
+// Modulos
 
+// Estilos
+import './Home.css'
 
+// Componentes
+
+// Core
 
 /* ####################################################
                     LOGICA
 ######################################################*/
-const  Hooks = () => { //Funcion constructora
+const  Home = () => { //Funcion constructora
     // retorno que se va a randerizar
     return (
        <p>
-        
+        Home
        </p>
     )
 }
@@ -21,4 +26,4 @@ const  Hooks = () => { //Funcion constructora
 /* ####################################################
                     EXPORTACIONES
 ######################################################*/
-export default Hooks
+export default Home

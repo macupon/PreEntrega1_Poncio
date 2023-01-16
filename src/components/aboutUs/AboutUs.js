@@ -4,7 +4,7 @@
 // Modulos
 
 // Estilos
-import './modeloC.css'
+import './AboutUs.css'
 
 // Componentes
 
@@ -13,11 +13,12 @@ import './modeloC.css'
 /* ####################################################
                     LOGICA
 ######################################################*/
-const  modeloC = () => { //Funcion constructora
+const  AboutUs = () => { //Funcion constructora
     // retorno que se va a randerizar
     return (
        <p>
-        modeloC
+        AboutUs
+    
        </p>
     )
 }
@@ -26,4 +27,4 @@ const  modeloC = () => { //Funcion constructora
 /* ####################################################
                     EXPORTACIONES
 ######################################################*/
-export default modeloC
+export default AboutUs

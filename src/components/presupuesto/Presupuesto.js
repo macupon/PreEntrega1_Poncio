@@ -4,7 +4,7 @@
 // Modulos
 
 // Estilos
-import './modeloC.css'
+import './Presupuesto.css'
 
 // Componentes
 
@@ -13,11 +13,11 @@ import './modeloC.css'
 /* ####################################################
                     LOGICA
 ######################################################*/
-const  modeloC = () => { //Funcion constructora
+const  Presupuesto = () => { //Funcion constructora
     // retorno que se va a randerizar
     return (
        <p>
-        modeloC
+        Presupuesto
        </p>
     )
 }
@@ -26,4 +26,4 @@ const  modeloC = () => { //Funcion constructora
 /* ####################################################
                     EXPORTACIONES
 ######################################################*/
-export default modeloC
+export default Presupuesto

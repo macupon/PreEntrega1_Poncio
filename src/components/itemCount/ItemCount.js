@@ -32,6 +32,7 @@ const  ItemCount = (props) => { //Funcion constructora
     }
     // retorno que se va a randerizar
     return (
+    <div>
         <div className='count_box'>
             <div className='button-count'>
                 <div className='button-count-child'>
@@ -44,6 +45,7 @@ const  ItemCount = (props) => { //Funcion constructora
                 <button id='onadd' onClick={onAdd}>On Add</button>
             </div>
         </div>
+    </div>
         
     )
 }
