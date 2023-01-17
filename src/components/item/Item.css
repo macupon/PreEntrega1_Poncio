@@ -10,7 +10,7 @@
     margin: 20px;
 } 
 .card-price{
-    font-size: 26px;
+    font-size: 40px;
     color: orange;
     display: flex;
 }
@@ -22,7 +22,7 @@
 }
 
 .title_card {
-    font-size: 40px;
+    font-size: 50px;
     color: #303952;
     display:flex;
     justify-content:space-between;
@@ -39,4 +39,8 @@
 
 .card-text{
     color: #596275;
+}
+.card-body{
+    background-color: #f5f7fb;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
 }

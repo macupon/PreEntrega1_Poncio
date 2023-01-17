@@ -13,7 +13,7 @@ import ItemCount from '../itemCount/ItemCount'
 ######################################################*/
 const  Item = (props) => { //Funcion constructora
     // retorno que se va a randerizar
-    const {nombre, medida, precio, stock, img, id} = props.data
+    const {nombre, precio, stock, img, id} = props.data
     return (
         <div className='card_style container'>
             <div className='card'>
@@ -23,7 +23,7 @@ const  Item = (props) => { //Funcion constructora
                     <h5 className='card-title title_card'>{nombre} </h5>
                     <p className='card-price'>${precio}.-</p>
                 </div>
-                <p className='card-text'>Tamaño: {medida}cm</p>
+                
                 <div className='bloque_count'>
                     <ItemCount stock={stock}/>
                 </div>

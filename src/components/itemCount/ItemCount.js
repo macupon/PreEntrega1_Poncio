@@ -42,7 +42,7 @@ const  ItemCount = (props) => { //Funcion constructora
                 </div>
             </div>
             <div className='button-count'>
-                <button id='onadd' onClick={onAdd}>On Add</button>
+                <button id='onadd' onClick={onAdd}>Comprar</button>
             </div>
         </div>
     </div>

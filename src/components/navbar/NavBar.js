@@ -50,13 +50,16 @@ const NavBar = (props) => {
               <Link className="nav-link dropdown-toggle px-3" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Productos</Link>
                 <ul className="dropdown-menu">
                   <li>
-                  <Link className="dropdown-item" aria-current="page" to="/productos">Personas</Link>
+                  <Link className="dropdown-item" aria-current="page" to="/productos/Persona">Personas</Link>
                   </li>
                   <li>
-                  <Link className="dropdown-item" aria-current="page" to="/productos">Personajes</Link>
+                  <Link className="dropdown-item" aria-current="page" to="/productos/Personajes">Personajes</Link>
                   </li>
                   <li>
-                  <Link className="dropdown-item" aria-current="page" to="/productos">Disney</Link>
+                  <Link className="dropdown-item" aria-current="page" to="/productos/Disney">Disney</Link>
+                  <li>
+                  <Link className="dropdown-item" aria-current="page" to="/productos">Todos</Link>
+                  </li>
                   </li>
                 </ul>
               </li>

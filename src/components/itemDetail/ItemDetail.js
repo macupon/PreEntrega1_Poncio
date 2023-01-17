@@ -15,25 +15,27 @@ import './ItemDetail.css'
 ######################################################*/
 const  ItemDetail = (props) => { //Funcion constructora
     // retorno que se va a randerizar
-    const { nombre, precio, medida, img, stock, id } = props.data;
+    const { nombre, precio, medida, img, stock} = props.data;
     return (
-        <div className='card_style container'>
-            <div className='card'>
-            <img className='card-img-top card' src={img} alt=""></img>
-            <div className='card-body'>
-                <div className='title_card'>
-                    <h5 className='card-title title_card'>{nombre} </h5>
-                    <p className='card-price'>${precio}.-</p>
+        <div className='datail_card'>
+            <div className='card_style tam_card_detail container'>
+                <div className='card'>
+                <img className='card-img-top card' src={img} alt=""></img>
+                <div className='card-body'>
+                    <div className='title_card'>
+                        <h5 className='card-title title_card'>{nombre} </h5>
+                        <p className='card-price'>${precio}.-</p>
+                    </div>
+                    <p className='card-text'>Tamaño: {medida} cm</p>
+                    <div className='bloque_count'>
+                        <ItemCount stock={stock}/>
+                    </div>
+                    <div className='product_details'>
+                        <Link to="/productos" > volver a mis productos</Link>
+                    </div>
+                    
                 </div>
-                <p className='card-text'>Tamaño: {medida}cm</p>
-                <div className='bloque_count'>
-                    <ItemCount stock={stock}/>
                 </div>
-                <div className='product_details'>
-                    <Link to={`/producto/${id}`} > ver detalle del producto</Link>
-                </div>
-                
-            </div>
             </div>
         </div>
     )
