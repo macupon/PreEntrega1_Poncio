@@ -2,7 +2,7 @@
                     IMPORTACIONES
 ######################################################*/
 // Modulos
-import { useState } from 'react'
+// import { useState } from 'react'
 
 // import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -16,28 +16,34 @@ import ItemList from '../itemList/ItemList'
                     LOGICA 
 ######################################################*/
 const  ItemListContainer = (props) => { //Funcion constructora
+    // const [apliques, setApliques] = useState([])
 
-   
-    const [category, setCategory] = useState("all")
+    // useEffect(()=>{
+    //     fetch('../json_local.json')
+    //     .then(res=>res.json())
+    //     .then(apliques=>setApliques(apliques.find((item)=> item.id === productoId)))
+    //     },[productoId])
 
-    const categoryPersonajes = () => {
-        setCategory("Personajes")
-    }
-    const categoryPersona = () => {
-        setCategory("Persona")
-    }
-    const categoryDisney = () => {
-        setCategory("Disney")
-    }
-    const categoryAll = () => {
-        setCategory("all")
-    }
+    // const [category, setCategory] = useState("all")
+
+    // const categoryPersonajes = () => {
+    //     setCategory("Personajes")
+    // }
+    // const categoryPersona = () => {
+    //     setCategory("Persona")
+    // }
+    // const categoryDisney = () => {
+    //     setCategory("Disney")
+    // }
+    // const categoryAll = () => {
+    //     setCategory("all")
+    // }
 
 
     return (
     
     <div>
-        <ul className='nav justify-content-end'>
+        {/* <ul className='nav justify-content-end'>
             <li className='nav-item'>
                 <button className='nav-link button_cat' onClick={categoryPersonajes}>Personajes</button>
              </li>
@@ -50,15 +56,15 @@ const  ItemListContainer = (props) => { //Funcion constructora
             <li className='nav-item'>
                 <button className='nav-link button_cat' onClick={categoryAll}>Todos</button>
             </li>
-         </ul>
+         </ul> */}
         <div className='fondo_cards'>
-        <ItemList categoriaName={category}/>
+        <ItemList />
         </div>
     </div>
     )
 }
 
-
+// categoriaName={category}
 
 /* ####################################################
                     EXPORTACIONES

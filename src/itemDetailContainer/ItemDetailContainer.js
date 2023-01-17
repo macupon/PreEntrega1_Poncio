@@ -2,13 +2,13 @@
                     IMPORTACIONES
 ######################################################*/
 // Modulos
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+// import { useEffect, useState } from 'react'
+// import { useParams } from 'react-router-dom'
 // Estilos
 import './ItemDetailContainer.css'
 
 // Componentes
-import ItemDetail from '../components/itemDetail/ItemDetail'
+// import ItemDetail from '../components/itemDetail/ItemDetail'
 
 // Core
 
@@ -16,8 +16,8 @@ import ItemDetail from '../components/itemDetail/ItemDetail'
                     LOGICA
 ######################################################*/
 const  ItemDetailContainer = () => {
-    const [apliques, setApliques] = useState([])
-    const { productoId } = useParams ()
+    // const [apliques, setApliques] = useState([])
+    // const { productoId } = useParams ()
     //Funcion constructora
     
     // useEffect(()=>{
@@ -28,16 +28,16 @@ const  ItemDetailContainer = () => {
     // },[productoId])
     // retorno que se va a randerizar
 
-            // ${productoId}`)
-
-        fetch(`/data.json`) 
-            .then(res=>res.json())
-            .then(apliques=>setApliques(<ItemDetail key={apliques.id} id={"producto" + apliques.id} data={apliques}/>))
-    },[productoId]
+    // /json_local.json
+//    useEffect(()=>{
+// fetch('../json_local.json')
+// .then(res=>res.json())
+// .then(apliques=>setApliques(apliques.find((item)=> item.id === productoId)))
+// },[productoId])
   
     return (
        <p>
-        {apliques}
+        {/* {apliques} */}
         ItemDetailContainer
        </p>
     )
