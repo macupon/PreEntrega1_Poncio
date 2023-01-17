@@ -6,8 +6,9 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home.js';
 import AboutUs from './components/aboutUs/AboutUs.js';
-import ItemDetailContainer from './itemDetailContainer/ItemDetailContainer.js';
+import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer.js';
 import Presupuesto from './components/presupuesto/Presupuesto.js';
+
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route exact path='/presupuesto' element={<Presupuesto/>}/>
           <Route exact path='/productos' element={<ItemListContainer greeting="productos"/>}/>
           <Route exact path='/producto/:productoId' element={<ItemDetailContainer/>}/>
+          <Route exact path='/productos/:categoriaId' element={<ItemListContainer greeting="productos"/>}/>
         </Routes>
 
         <Footer/>
