@@ -17,19 +17,21 @@ const  ItemCount = (props) => { //Funcion constructora
     // Funcion sumar con maximo de stock
     const addOne = () => {
         if(count < props.stock){
-            setCount(count + 1)
+            setCount(prevCount => prevCount + 1)
+            props.guardarCantidadAComprar(prevCount => prevCount + 1)
         }
     }
     // Funcion restar
     const disOne = () => {
         if(count > 0){
-            setCount (count - 1)
+            setCount (prevCount => prevCount  - 1)
+            props.guardarCantidadAComprar(prevCount => prevCount - 1)
         }
     }
     //Funcion agregar x cantidad de productos
-    const onAdd = () => {
-        console.log(count);
-    }
+    // const onAdd = () => {
+    //     console.log(count);
+    // }
     // retorno que se va a randerizar
     return (
     <div>
@@ -41,9 +43,9 @@ const  ItemCount = (props) => { //Funcion constructora
                 <button onClick={addOne}>+</button>
                 </div>
             </div>
-            <div className='button-count'>
+            {/* <div className='button-count'>
                 <button id='onadd' onClick={onAdd}>Comprar</button>
-            </div>
+            </div> */}
         </div>
     </div>
         

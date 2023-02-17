@@ -81,7 +81,7 @@
      "nombre":"Monster",
      "medida":"10x10",
      "precio":3000,
-     "categoria":"Personajes",
+     "categoria":"Disney",
      "stock":"4",
      "img": "../img/monster.jpg"
 

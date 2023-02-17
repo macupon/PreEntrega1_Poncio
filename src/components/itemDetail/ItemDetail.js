@@ -5,6 +5,9 @@
 import { Link } from 'react-router-dom'
 // Componentes
 import ItemCount from '../itemCount/ItemCount'
+import { useState, useEffect, useContext } from 'react'
+// import {CartProvider, useCartContext} from '../context/CartContext'
+import { CartContext } from '../context/CartContext'
 // Estilos
 import './ItemDetail.css'
 
@@ -14,8 +17,28 @@ import './ItemDetail.css'
                     LOGICA
 ######################################################*/
 const  ItemDetail = (props) => { //Funcion constructora
+    // desempaquetamos props
+    const {id, nombre, precio, medida, img, stock, categoria} = props.data;
+
     // retorno que se va a randerizar
-    const { nombre, precio, medida, img, stock} = props.data;
+    const [cantidadProductos, setCantidadProductos] = useState(0)
+    const {itemsCarrito, addItem, removeItem} = useContext(CartContext);
+    
+    
+    const cantidadHijo = (cantidadX) => {
+        setCantidadProductos(cantidadX)
+    }
+
+    const onAdd = (item, cant) => {
+        addItem(item, cant)
+    }
+    const clickComprar = () => {
+        // console.log(nombre, cantidadProductos)
+        onAdd(props.data, cantidadProductos)
+        // console.log(CartContext._currentValue)
+    }
+
+
     return (
         <div className='datail_card'>
             <div className='card_style tam_card_detail container'>
@@ -28,7 +51,10 @@ const  ItemDetail = (props) => { //Funcion constructora
                     </div>
                     <p className='card-text'>Tamaño: {medida} cm</p>
                     <div className='bloque_count'>
-                        <ItemCount stock={stock}/>
+                        <ItemCount stock={stock} guardarCantidadAComprar={cantidadHijo} />     
+                        <div className='button-count'>
+                            <button onClick={clickComprar} id='onadd'>Añadir al carrito</button>
+                        </div>
                     </div>
                     <div className='product_details'>
                         <Link to="/productos" > volver a mis productos</Link>
@@ -46,3 +72,5 @@ const  ItemDetail = (props) => { //Funcion constructora
                     EXPORTACIONES
 ######################################################*/
 export default ItemDetail
+
+// guardarCantidadAComprar={cantidadHijo}

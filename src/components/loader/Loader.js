@@ -4,7 +4,8 @@
 // Modulos
 
 // Estilos
-import './Presupuesto.css'
+import { useEffect, useState } from 'react'
+import './Loader.css'
 
 // Componentes
 
@@ -13,11 +14,22 @@ import './Presupuesto.css'
 /* ####################################################
                     LOGICA
 ######################################################*/
-const  Presupuesto = () => { //Funcion constructora
+const  Loader = () => { //Funcion constructora
     // retorno que se va a randerizar
+
+    const [cargando, setCargando] = useState()
+
+    useEffect(()=>{
+
+        setTimeout(()=>{
+            setCargando(false)
+        },5000)       
+    },[])
+
+
     return (
        <p>
-        Presupuesto
+        Loader
        </p>
     )
 }
@@ -26,4 +38,4 @@ const  Presupuesto = () => { //Funcion constructora
 /* ####################################################
                     EXPORTACIONES
 ######################################################*/
-export default Presupuesto
+export default Loader

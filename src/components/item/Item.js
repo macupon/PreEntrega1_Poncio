@@ -5,7 +5,8 @@
 import './Item.css'
 import { Link } from 'react-router-dom'
 // Componentes
-import ItemCount from '../itemCount/ItemCount'
+import ItemCount from '../itemCount/ItemCount' 
+import { useEffect, useState } from 'react'
 
 
 /* ####################################################
@@ -13,20 +14,33 @@ import ItemCount from '../itemCount/ItemCount'
 ######################################################*/
 const  Item = (props) => { //Funcion constructora
     // retorno que se va a randerizar
+    const [cantidadProductos, setCantidadProductos] = useState(0)
+ 
+    const cantidadHijo = (cantidadX) => {
+        setCantidadProductos(cantidadX)
+    }
+
+    useEffect(()=>{
+        console.log(`${cantidadProductos}`)
+    },[cantidadProductos])
+
     const {nombre, precio, stock, img, id} = props.data
+    
     return (
         <div className='card_style container'>
             <div className='card'>
             <img className='card-img-top card' src={img} alt=""></img>
             <div className='card-body'>
                 <div className='title_card'>
-                    <h5 className='card-title title_card'>{nombre} </h5>
+                    <h5 className='card-title title_card'>{nombre}</h5>
+                    
                     <p className='card-price'>${precio}.-</p>
                 </div>
                 
                 <div className='bloque_count'>
-                    <ItemCount stock={stock}/>
+                    {/* <ItemCount stock={stock} guardarCantidadAComprar={cantidadHijo}/> */}
                 </div>
+                
                 <div className='product_details'>
                     <Link to={`/producto/${id}`} > ver detalle del producto</Link>
                 </div>
