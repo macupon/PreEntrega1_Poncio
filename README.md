@@ -1,5 +1,13 @@
 # PreEntrega1_Poncio
 
+La web es una tienda de apliques. 
+La seccion home y nosotros esta vacia.
+La seccion productos muestra los productos ordenados por categorias y cada Item mostrado en productos tien acceso 
+al detalle del producto donde se puede agregar el item al carrito. 
+Haciendo click al carrito tenemos acceso a un resumen de productos, donde se pueden agregar o quitar apliques,
+dentro de esta pagina, podemos observar el detalle del precio total (con y sin iva). 
+Al hacer click  en el boton check-out nos redirige al formulario, donde al hacer click a enviar formulario, recibimos el numero de orden correspondiente. 
+Se ha implementado localStorage para que, cuando se reinicia la pagina, queden guardados los items del carrito.
 
 
 # Getting Started with Create React App
