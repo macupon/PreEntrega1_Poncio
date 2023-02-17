@@ -43,9 +43,6 @@ const NavBar = (props) => {
               <li className="nav-item">
                 <Link className="nav-link  px-3" aria-current="page" to="/nosotros">Nosotros</Link>
               </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link  px-3" aria-current="page" to="/cart">Carrito</Link>
-              </li> */}
               <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle px-3" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Productos</Link>
                 <ul className="dropdown-menu">

@@ -5,7 +5,6 @@
 import './Item.css'
 import { Link } from 'react-router-dom'
 // Componentes
-import ItemCount from '../itemCount/ItemCount' 
 import { useEffect, useState } from 'react'
 
 
@@ -15,10 +14,6 @@ import { useEffect, useState } from 'react'
 const  Item = (props) => { //Funcion constructora
     // retorno que se va a randerizar
     const [cantidadProductos, setCantidadProductos] = useState(0)
- 
-    const cantidadHijo = (cantidadX) => {
-        setCantidadProductos(cantidadX)
-    }
 
     useEffect(()=>{
         console.log(`${cantidadProductos}`)
@@ -35,10 +30,6 @@ const  Item = (props) => { //Funcion constructora
                     <h5 className='card-title title_card'>{nombre}</h5>
                     
                     <p className='card-price'>${precio}.-</p>
-                </div>
-                
-                <div className='bloque_count'>
-                    {/* <ItemCount stock={stock} guardarCantidadAComprar={cantidadHijo}/> */}
                 </div>
                 
                 <div className='product_details'>

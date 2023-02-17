@@ -31,7 +31,6 @@ const  ItemListContainer = (props) => { //Funcion constructora
                 const newDoc = {
                     id:doc.id,
                     ...doc.data()
-                    // ...doc.data()
                 }
                 return newDoc
             });
@@ -60,20 +59,3 @@ const  ItemListContainer = (props) => { //Funcion constructora
                     EXPORTACIONES
 ######################################################*/
 export default ItemListContainer
-
-
-
-
-// Acceder a base de datos con archivo JSON
-
-// useEffect(()=>{
-//     fetch('../json_local.json')
-//     .then(res=>res.json())
-//     .then(json=>{
-//         if(categoriaId){
-//             setApliques(json.apliques.filter((aplique)=> aplique.categoria === categoriaId))
-//         }else{
-//             setApliques(json.apliques)
-//         }
-//     })
-//     },[categoriaId])

@@ -18,11 +18,11 @@ import './ItemDetail.css'
 ######################################################*/
 const  ItemDetail = (props) => { //Funcion constructora
     // desempaquetamos props
-    const {id, nombre, precio, medida, img, stock, categoria} = props.data;
+    const {nombre, precio, medida, img, stock} = props.data;
 
     // retorno que se va a randerizar
     const [cantidadProductos, setCantidadProductos] = useState(0)
-    const {itemsCarrito, addItem, removeItem} = useContext(CartContext);
+    const {addItem} = useContext(CartContext);
     
     
     const cantidadHijo = (cantidadX) => {
@@ -33,9 +33,7 @@ const  ItemDetail = (props) => { //Funcion constructora
         addItem(item, cant)
     }
     const clickComprar = () => {
-        // console.log(nombre, cantidadProductos)
         onAdd(props.data, cantidadProductos)
-        // console.log(CartContext._currentValue)
     }
 
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
+
 .contact-form-wrapper {
     padding: 20px 0;
   }
@@ -93,9 +95,13 @@
     flex-wrap: wrap;
     align-items:baseline;
     background-color: white;
-    margin: 20px;
     font-family:'bebas neue';
     padding: 20px;
     border-radius: 12px;
     max-width: 400px;
+    Display: block;
+  }
+
+  .container {
+    align-items:baseline;
   }

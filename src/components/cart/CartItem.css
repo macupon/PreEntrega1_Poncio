@@ -68,10 +68,20 @@
     padding: 10px;
     margin-top: 20px;
     border-radius: 15%;
-    
+    width: 120px;
 }
 
 .title_card_cart {
     font-family: 'bebas neue';
     font-size: 30px;
+    width: 110px;
 }
+
+.buttonCountCart{
+    align-content: center;
+    display: flex;
+    width: 90px;
+}
+.buttonCountCart button, .buttonCountCart p {
+    margin: 0 8px; /* Agrega un margen a los elementos para separarlos */
+  }

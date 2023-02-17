@@ -19,12 +19,6 @@ const CartProvider = ({children}) => {
         const carritoRecuperado = JSON.parse(localStorage.getItem("ultimoCarrito"));
         return carritoRecuperado || ""
     })
-    
-    // nuevo estado para el OrderID
-    const [CartOrderID, setCartOrderID] = useState()
-    const upDateOrderId = (newOrder) =>{
-        setCartOrderID(newOrder)
-    }
 
     // ///////////////////////////////////////
     // Funciones de mi CartProvider
@@ -85,80 +79,10 @@ const CartProvider = ({children}) => {
     }
 
     return(
-        <CartContext.Provider value={{itemsCarrito, isInCart, addItem, itemAmount, clearCart, removeItem, getTotalProducts, CartOrderID, setCartOrderID } }>
+        <CartContext.Provider value={{itemsCarrito, isInCart, addItem, itemAmount, clearCart, removeItem, getTotalProducts} }>
             {children}
         </CartContext.Provider>
     )
 }
 
 export  default  CartProvider;
-
- // /////////////////////////////////////////////////////////////////////
-    // const listaDeCarrito = () => {
-    //     return itemsCarrito
-    // }
-    
-    
-
-    
-
-    // const addItem = (item, quantity) => {
-    //     // Ojo que item es todo el aplique con todas las propiedades (categoria, nombre, medida, etc...)
-    //     // Miro si el item ya existia con la función checkSiExiste, si no encuentra nada no retorna
-    //     // nada y por tanto no entra en el "if" y añade el item y cantidad a itemsCarrito directamente
-    //     const ItemQueYaExistia = checkSiExiste(item)
-    //     // si la función checkSiExiste encuentra un item igual entonces escupe un ItemQueYaExistia y entra en el siguiente if
-    //     if (ItemQueYaExistia){
-    //         console.log("ya existia")
-    //         // coger cantidad que había de este aplique y sumarle la nueva cantidad del mismo aplique
-    //         quantity = quantity + ItemQueYaExistia.quantity
-    //         // busco el aplique que ya existia en "itemsCarrito" y lo elimino
-    //         // lo busco con el id y me quedo con el indice, y luego elimino usando:
-    //         // UnaArray.splice(2,1) - que hace "en la posición 2 de la "UnaArray" elimino 1 elemento"
-    //         setItemsCarrito(
-    //             itemsCarrito.splice(
-    //                 itemsCarrito.findIndex((element)=>element.item.id ===item.id),
-    //                 1
-    //             )
-    //         )
-    //     }
-    //     // Ahora que lo he borrado lo añado con la cantidad correcta
-    //     setItemsCarrito([...itemsCarrito, {item, quantity}])
-
-    //     console.log(itemsCarrito)
-    //     // console.log([...itemsCarrito, {item, quantity}])
-    // }
-
-    // Esta funcion encuentra
-    // const checkSiExiste = (item) =>{
-    //     return itemsCarrito.find((element)=> element.item === item)
-    // }
-
-    // const isInCart = (id)=>{
-    //     const elementExists = itemsCarrito.some((elemento)=>elemento.id === id);
-    //     return elementExists;
-    // }
-
-    // const agregarAlCarrito = (data) => {
-    //     if(validaritemoExistente(data.id)){
-    //         alert("el item ya esta en el carrito")
-    //     } else {
-    //         const listaActual = itemsCarrito
-    //     listaActual.push(data)
-    //     setItemsCarrito(listaActual)
-    //     console.log(itemsCarrito);
-    //     } 
-    // }
-
-    
-
-   
-
-    // const validaritemExistente = (id) => {
-    //     if(itemsCarrito.find(e=> e.id === id)){
-    //         return true
-    //     }else {
-    //         return false
-    //     }
-    // }
-    // Render de mi CartProvider

@@ -7,14 +7,10 @@
 import './CheckoutForm.css'
 
 // Componentes
-import { useContext, useEffect, useState, useCallback } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { useContext, useState } from 'react';
 import { CartContext } from '../context/CartContext';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../../services/firebase';
-
-import OrderId from './OrderID';
-
 
 // Core
 
@@ -22,7 +18,7 @@ import OrderId from './OrderID';
                     LOGICA
 ######################################################*/
 const  CheckoutForm = () => { //Funcion constructora
-    const {itemsCarrito, CartOrderID, setCartOrderID} = useContext(CartContext);
+    const {itemsCarrito} = useContext(CartContext);
     const [orderID, setOrderID] = useState()
 
     const calcularPrecioTotal = () => {
@@ -47,28 +43,9 @@ const  CheckoutForm = () => { //Funcion constructora
             console.log(response)
             setOrderID(response.id)
 
-            setCartOrderID(response.id)
-            
-            
-            // return response.id
+            alert(`Gracias por su pedido, su número de orden es: ${response.id}`)
         }
         
-    
-        // useEffect(()=>{
-        //     setCartOrderID(orderID);
-        //     console.log(CartOrderID)
-        //     },[orderID])
-
-        // const navigate = useNavigate()
-        // const handleOnClick = useCallback( (orderID) => navigate('/blabla', {replace: true}), [navigate]);
-
-        // const onclick = (orderID) =>{
-        //     sendOrder()
-        //     console.log(orderID)
-        //     handleOnClick(orderID)
-        // }
-
-
 
     // retorno que se va a randerizar
     return (
@@ -78,9 +55,11 @@ const  CheckoutForm = () => { //Funcion constructora
                     <p className='tituloPedido'>Resumen de su Pedido</p>
                     <div className='resumen'>
                         
-                        <p>-3x Mario</p>
-                        <p>-2x Maradona</p>
-                        {orderID}
+                        <p>{itemsCarrito.map((e)=> (<span> {(e.quantity)} x {(e.nombre)} <br/> </span>))}</p>
+                        <p>Total a Pagar: ${calcularPrecioTotal()}</p>
+                        <div>
+                        <p>Su número es:<br/> {orderID}</p>
+                        </div>
                     </div>
                 </div>
                 
@@ -97,9 +76,9 @@ const  CheckoutForm = () => { //Funcion constructora
                         <textarea  class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" id="message" placeholder=" Message" required></textarea>
                         </div>
                         <div className='submit-button-wrapper' >
-                        <Link to={`/${orderID}`}>  
+                        
                         <button onClick={sendOrder} id="enviarForm" type="submit" value="Send">Enviar</button>
-                        </Link>
+                        
                         </div>
                     </form>
                 </div>
@@ -114,21 +93,3 @@ const  CheckoutForm = () => { //Funcion constructora
                     EXPORTACIONES
 ######################################################*/
 export default CheckoutForm
-
-
-
-{/* <form>
-<label>
-    Name:
-    <input type="text" name="name" />
-</label>
-<label>
-    phone:
-    <input type="text" name="phone" />
-</label>
-<label>
-    email:
-    <input type="text" name="email" />
-</label>
-<input type="submit" value="Enviar Orden" onClick={sendOrder}/>
-</form> */}

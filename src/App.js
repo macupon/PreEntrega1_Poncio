@@ -11,7 +11,6 @@ import Home from './components/home/Home.js';
 import AboutUs from './components/aboutUs/AboutUs.js';
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer.js';
 import CheckoutForm from './components/cart/CheckoutForm';
-import OrderId from './components/cart/OrderID';
  
 // import ItemCategoryContainer from './components/itemCategoryContainer/ItemCategoryContainer.js';
 import NavBar from './components/navbar/NavBar.js';
@@ -29,7 +28,6 @@ function App() {
             <Routes>
               <Route exact path='/' element={<Home/>}/>
               <Route exact path='/checkout' element={<CheckoutForm/>}/>
-              <Route exact path='/orderid' element={<OrderId/>}/>
               <Route exact path='/cart' element={<Cart/>}/>
               <Route exact path='/nosotros' element={<AboutUs/>}/>
               <Route exact path='/productos' element={<ItemListContainer greeting="productos"/>}/>
