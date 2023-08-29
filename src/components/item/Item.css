@@ -3,12 +3,33 @@
 
  .card_style {
     font-size: 15px;
-    width: 20rem;    
+    width: 400px;    
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 20px;
 } 
+
+.card {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border: none;
+}
+.card-body{
+    background-color: #f5f7fb;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border: none;
+}
+
+.card-img-top {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
 .card-price{
     font-size: 40px;
     color: orange;
@@ -34,13 +55,14 @@
 .product_details {
     display: flex;
     justify-content: center;
-    font-size: 12px;
+}
+
+.product_details_text {
+    color: #14648C;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 .card-text{
     color: #596275;
-}
-.card-body{
-    background-color: #f5f7fb;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
 }

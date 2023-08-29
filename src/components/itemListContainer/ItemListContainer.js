@@ -51,9 +51,8 @@ const  ItemListContainer = (props) => { //Funcion constructora
         getData();
 
         },[categoriaId])
-
+        
     return (
-    
     <div>
         <div className='btn-primary-div'>
             {/* <button onClick={history.push('/productos/Disney')}>Disney</button> */}

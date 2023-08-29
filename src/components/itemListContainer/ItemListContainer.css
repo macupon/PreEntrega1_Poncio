@@ -3,8 +3,7 @@
     margin: 0;
   }
 
-.button_cat {
-    
+/* .button_cat {
     margin: 10px;
     border: none;
     display: flex;
@@ -14,26 +13,38 @@
     color: #596275;
     font-family: 'Balsamiq Sans', cursive;
     font-size: 18px;
-}
+} */
 .fondo_cards {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.btn-primary-div{
+
+.btn-primary-div {
     display: flex;
     justify-content: end;
+    margin-bottom: 30px;
+    padding: 20px;
 }
-.btn-primary{
+.btn-primary {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    background-color: rgb(207, 221, 221);
-    border-color: #596275;
+    width: 120px;
+    background-color: #ccc0f2;
+    border-color: #ccc0f2;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 10px;
-    color:#596275;
-    font-family: 'Balsamiq Sans', cursive;
+    color: #14648C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border-radius: 110px;
+    padding: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #f0b172;
+    border: none;
 }
 
 

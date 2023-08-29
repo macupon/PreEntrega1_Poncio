@@ -24,19 +24,19 @@ const  Item = (props) => { //Funcion constructora
     return (
         <div className='card_style container'>
             <div className='card'>
-            <img className='card-img-top card' src={img} alt=""></img>
-            <div className='card-body'>
-                <div className='title_card'>
-                    <h5 className='card-title title_card'>{nombre}</h5>
+                <img className='card-img-top' src={img} alt=""></img>
+                <div className='card-body'>
+                    <div className='title_card'>
+                        <h5 className='card-title title_card'>{nombre}</h5>
+                        
+                        <p className='card-price'>${precio}.-</p>
+                    </div>
                     
-                    <p className='card-price'>${precio}.-</p>
+                    <div className='product_details'>
+                        <Link to={`/producto/${id}`} className='product_details_text'> Ver detalle del producto</Link>
+                    </div>
+                    
                 </div>
-                
-                <div className='product_details'>
-                    <Link to={`/producto/${id}`} > ver detalle del producto</Link>
-                </div>
-                
-            </div>
             </div>
         </div>
     
