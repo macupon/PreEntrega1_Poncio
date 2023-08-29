@@ -1,28 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 * {
     padding: 0;
     margin: 0;
   }
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .navbar {
-    background-color: rgb(108, 195, 184);
-    color: white;
+    /* background-color: rgb(108, 195, 184); */
+    /* background-color: #a7dbd8; */
+    /* background-color: #D0CCE4; */
+    background-color: #f5f3f0;
+    color: #14648C;
     padding: 10px;
     font-family: 'Balsamiq Sans', cursive;
-    
 }
 
-.nav-custom-purple .nav-link, .nav-custom-purple .nav-link.active {
-    color: white;
-    font-family: 'Balsamiq Sans', cursive;
-    font-size: 25px;
-    
+.navbar-nav {
+    margin-left: 40px;
 }
-.apliques {
+.faStar {
+    display: flex;
+    align-items: center;
+}
+.nav-custom-purple .nav-link, .nav-custom-purple .nav-link.active {
+    color: #14648C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.nav-custom-purple:hover .nav-link:hover, .nav-custom-purple:hover .nav-link.active:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: auto;
+    text-decoration-style:wavy;
+}
+.apliques-title {
     font-family: 'Grand Hotel', cursive;
     font-size: 70px;
-    
+    /* color: #db6c7d; */
 }
+.apliques-title .char1{
+    color: #81cbd3;
+}
+.apliques-title .char2{
+    color: #ccc0f2;
+}
+.apliques-title .char3{
+    color: #f0b172;
+}
+.apliques-title .char4{
+    color: #b4a2e9;
+}
+.apliques-title .char5{
+    color: #fad990;
+}
+.apliques-title .char6{
+    color: #f6b8cf;
+}
+.apliques-title .char7{
+    color: #81cbd3;
+}
+.apliques-title .char8{
+    color: #ccc0f2;
+}
+.apliques-title .char9{
+    color: #b4a2e9;
+}
+.apliques-title .char10{
+    color: #fad990;
+}
+.apliques-title .char11{
+    color: #f6b8cf;
+}
+.apliques-title .char12{
+    color: #81cbd3;
+}
+.apliques-title .char13{
+    color: #ccc0f2;
+}
+.apliques-title .char14{
+    color: #AB9BDB;
+}
+.apliques-title .char15{
+    color: #f0b172;
+}
+
+
 
 .nav-custom-purple .nav-link.active {
     color: white;

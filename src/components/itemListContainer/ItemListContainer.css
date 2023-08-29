@@ -18,6 +18,23 @@
 .fondo_cards {
     display: flex;
 }
+.btn-primary-div{
+    display: flex;
+    justify-content: end;
+}
+.btn-primary{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: rgb(207, 221, 221);
+    border-color: #596275;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color:#596275;
+    font-family: 'Balsamiq Sans', cursive;
+}
 
 
 

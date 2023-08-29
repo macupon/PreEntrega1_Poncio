@@ -17,9 +17,13 @@ const  CardWidget = () => { //Funcion constructora
 
     const calcularPrecioTotal = () => {
         var cant = 0
-        itemsCarrito.forEach(element => {cant = cant + element.quantity});
+        if (typeof itemsCarrito !== 'undefined' && itemsCarrito.length > 0) {
+            itemsCarrito.forEach(element => {cant = cant + element.quantity});
+        }
         return cant
     }
+
+    
     
 
 
@@ -34,6 +38,7 @@ const  CardWidget = () => { //Funcion constructora
     )
 
 }
+
 
 
 

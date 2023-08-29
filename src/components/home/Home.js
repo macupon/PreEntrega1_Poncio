@@ -35,7 +35,7 @@ const  Home = () => { //Funcion constructora
 
     return (
        <p>
-        Home
+         Home
        </p>
     )
 }

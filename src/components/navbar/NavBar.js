@@ -22,7 +22,26 @@ const NavBar = (props) => {
   return (
     <header className="navbar row">
         
-      <h1 className="apliques col-4">Apliques Marian <FaStar size={20}/> </h1> 
+      {/* <h1 className="apliques-title col-4">Apliques Marian <FaStar size={20}/> </h1>  */}
+      <h1 className='apliques-title col-4'>
+        <span className='char1'>A</span>
+        <span className='char2'>p</span>
+        <span className='char3'>l</span>
+        <span className='char4'>i</span>
+        <span className='char5'>q</span>
+        <span className='char6'>u</span>
+        <span className='char7'>e</span>
+        <span className='char8'>s</span>
+        <span className='char8'> </span>
+        <span className='char9'>M</span>
+        <span className='char10'>a</span>
+        <span className='char11'>r</span>
+        <span className='char12'>i</span>
+        <span className='char13'>a</span>
+        <span className='char14'>n</span>
+        <span className='char8'> </span>
+        <span className='char15'><FaStar size={20}/></span>
+      </h1>
       <nav className="navbar navbar-expand-lg nav-custom-purple col-7">
         <div className="container-fluid">
           <button
@@ -37,13 +56,18 @@ const NavBar = (props) => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
+              <li className="faStar"><FaStar size={9}/></li>
               <li className="nav-item">
                 <Link className="nav-link  px-3" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link  px-3" aria-current="page" to="/nosotros">Nosotros</Link>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item">
+                <Link className="nav-link  px-3" aria-current="page" to="/productos">Productos</Link>
+              </li>
+              <li className="faStar"><FaStar size={9}/></li>
+              {/* <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle px-3" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">Productos</Link>
                 <ul className="dropdown-menu">
                   <li>
@@ -59,7 +83,7 @@ const NavBar = (props) => {
                   </li>
                   </li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

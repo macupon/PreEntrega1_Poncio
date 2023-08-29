@@ -17,8 +17,6 @@ import NavBar from './components/navbar/NavBar.js';
 
 
 function App() {
-
-
   return (
     <div className='d-flex flex-column min-vh-100'>
       <CartProvider>

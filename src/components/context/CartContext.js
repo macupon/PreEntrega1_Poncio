@@ -17,7 +17,7 @@ const CartProvider = ({children}) => {
     // Estado de mi CartProvider
     const [itemsCarrito, setItemsCarrito] = useState(()=>{
         const carritoRecuperado = JSON.parse(localStorage.getItem("ultimoCarrito"));
-        return carritoRecuperado || ""
+        return carritoRecuperado || []
     })
 
     // ///////////////////////////////////////
