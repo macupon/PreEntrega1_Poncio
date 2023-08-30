@@ -7,18 +7,13 @@
     padding: 0;
     margin: 0;
   }
-header {
+
+header .navbar {
     position: relative;
+    width: 100%;
+    height: 150px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navbar {
-    /* background-color: rgb(108, 195, 184); */
-    /* background-color: #a7dbd8; */
-    /* background-color: #D0CCE4; */
-    display: flex;
-    justify-content: center;
+    align-items: stretch;
     background-color: #f5f3f0;
     color: #14648C;
     padding: 25px;
@@ -26,29 +21,11 @@ header {
     font-size: 25px;
 }
 
-.navbar-nav {
-    margin-left: 60px;
-}
-.faStar {
-    display: flex;
-    align-items: center;
-}
-.nav-custom-purple .nav-link, .nav-custom-purple .nav-link.active {
-    color: #14648C;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 900;
-    font-size: 30px;
-}
-.nav-custom-purple:hover .nav-link:hover, .nav-custom-purple:hover .nav-link.active:hover{
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-decoration-skip-ink: auto;
-    text-decoration-style:wavy;
-}
 .apliques-title {
+    position: absolute;
+    width: auto;
     font-family: 'Grand Hotel', cursive;
     font-size: 85px;
-    /* color: #db6c7d; */
 }
 .apliques-title .char1{
     color: #81cbd3;
@@ -96,9 +73,32 @@ header {
     color: #f0b172;
 }
 
+.navbar-nav {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.faStar {
+    display: flex;
+    align-items: center;
+}
+.nav-custom-purple .nav-link, .nav-custom-purple .nav-link.active {
+    color: #14648C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.nav-custom-purple:hover .nav-link:hover, .nav-custom-purple:hover .nav-link.active:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: auto;
+    text-decoration-style:wavy;
+}
 
-
-.nav-custom-purple .nav-link.active {
+/* .nav-custom-purple .nav-link.active {
     color: white;
     text-decoration: underline;
-}
+} */

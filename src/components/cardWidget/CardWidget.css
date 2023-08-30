@@ -1,4 +1,6 @@
 .img_carrito{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     transition: transform .3s;
 }
