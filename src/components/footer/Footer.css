@@ -1,18 +1,21 @@
 .foot {
-    color: white;
-    padding: 10px;
-    font-family: 'Balsamiq Sans', cursive;
-    margin-top: auto;
-}
-
-.social{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
+    height: 90px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: aliceblue;
+    bottom: 0;
 }
-.social a {
-    color: black;
+
+.foot a {
+    color: #14648C;
+    margin-right: 10px;
+    margin-left: 10px; 
 }
 
 /*  

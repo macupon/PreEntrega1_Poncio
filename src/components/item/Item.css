@@ -16,10 +16,11 @@
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
 }
 .card-body{
     background-color: #f5f7fb;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 5px 15px;
     border-bottom-right-radius: 35px;
     border-bottom-left-radius: 35px;
     border: none;
@@ -32,7 +33,7 @@
 
 .card-price{
     font-size: 40px;
-    color: orange;
+    color: #f7a14b;;
     display: flex;
 }
 
