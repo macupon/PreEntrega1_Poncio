@@ -1,6 +1,7 @@
 .img_carrito{
     display: flex;
-    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
     text-decoration: none;
     transition: transform .3s;
 }
