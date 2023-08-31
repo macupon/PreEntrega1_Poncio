@@ -6,41 +6,38 @@
 }
 
 .count_box{
-    border-radius: 10%;
+    border-radius: 20%;
     flex-direction: column;    
     max-width: 150px;
+    margin-bottom: 20px;
 }
 
 .count_number {
-    font-size: 19px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-size: 23px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
 }
+
 .button-count button {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     font-size: 20px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
     margin: 10px;
-    border-radius: 30%;
+    border-radius: 45%;
+    border-style: none;
     background-color: #f7b731;
-    width: 30px;
-	height: 30px;
+    width: 34px;
+	height: 34px;
 	cursor: pointer;
+    color: #494545;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
-}
-#onadd {
-    background-color: #dfe6e9;
-    width: 90px;
-	height: 30px;
-    border-radius: 6%;
-    font-size: 17px;
-    text-align: center;
-    margin-top: 6px;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+    transition: 0.3s;
 }
 
-.button-count-child {
-    display: flex;
-    align-items: baseline;
+.button-count button:hover {
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 15px;
 }

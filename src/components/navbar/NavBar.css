@@ -25,7 +25,8 @@ header .navbar {
     position: absolute;
     width: auto;
     font-family: 'Grand Hotel', cursive;
-    font-size: 85px;
+    font-size: 75px;
+    margin-left: 50px;
 }
 .apliques-title .char1{
     color: #81cbd3;

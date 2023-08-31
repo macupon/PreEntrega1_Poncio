@@ -18,10 +18,8 @@
     font-family: 'Balsamiq Sans', cursive;
     align-items: center;
 }
-.bloque_count button {
-    display: flex;
-    justify-content: center;
-    align-items:center;
+
+/* .bloque_count button {
     font-size: 20px;
     font-family: 'Balsamiq Sans';
     margin: 10px;
@@ -31,16 +29,21 @@
 	height: 30px;
 	cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
-}
-#onadd {
-    background-color: #dfe6e9;
-    width: 90px;
-	height: 30px;
-    border-radius: 6%;
-    font-size: 17px;
-    text-align: center;
-    margin-top: 6px;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+} */
+.delete-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    background-color: #ccc0f2;
+    border-color: #ccc0f2;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #14648C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border-radius: 110px;
+    padding: 15px;
 }
 
 .button-count-child {

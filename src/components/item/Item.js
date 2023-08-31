@@ -28,10 +28,8 @@ const  Item = (props) => { //Funcion constructora
                 <div className='card-body'>
                     <div className='title_card'>
                         <h5 className='card-title title_card'>{nombre}</h5>
-                        
                         <p className='card-price'>${precio}.-</p>
                     </div>
-                    
                     <div className='product_details'>
                         <Link to={`/producto/${id}`} className='product_details_text'> Ver detalle del producto</Link>
                     </div>

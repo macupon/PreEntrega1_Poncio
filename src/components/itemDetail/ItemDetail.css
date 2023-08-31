@@ -4,11 +4,30 @@
     align-items: center;
 }
 
-.tam_card_detail {
-    font-size: 20px;
-    width: 40rem;    
+.button-onadd-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+.onadd {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 12px;
+    font-size: 18px;
+    background-color: #ccc0f2;
+    border-style: none;
+    color: #14648C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border-radius: 90px;
+    padding: 35px;
+    margin-bottom: 16px;
+    transition: 0.3s;
+}
+.onadd:hover {
+    background-color: #f0b172;
+    border: none;
+    color: white;
 }
 
-#onadd{
-    width: 150px;
-}

@@ -39,26 +39,26 @@ const  ItemDetail = (props) => { //Funcion constructora
 
     return (
         <div className='datail_card'>
-            <div className='card_style tam_card_detail container'>
+            <div className='card_style container'>
                 <div className='card'>
-                <img className='card-img-top card' src={img} alt=""></img>
-                <div className='card-body'>
-                    <div className='title_card'>
-                        <h5 className='card-title title_card'>{nombre} </h5>
-                        <p className='card-price'>${precio}.-</p>
-                    </div>
-                    <p className='card-text'>Tamaño: {medida} cm</p>
-                    <div className='bloque_count'>
-                        <ItemCount stock={stock} guardarCantidadAComprar={cantidadHijo} />     
-                        <div className='button-count'>
-                            <button onClick={clickComprar} id='onadd'>Añadir al carrito</button>
+                    <img className='card-img-top' src={img} alt=""></img>
+                    <div className='card-body'>
+                        <div className='title_card'>
+                            <h5 className='card-title title_card'>{nombre} </h5>
+                            <p className='card-price'>${precio}.-</p>
                         </div>
+                        <p className='card-text'>Tamaño: {medida} cm</p>
+                        <div className='button-onadd-div'>
+                            <ItemCount stock={stock} guardarCantidadAComprar={cantidadHijo} />     
+                            <div>
+                                <button onClick={clickComprar} className='onadd'>Añadir al carrito</button>
+                            </div>
+                        </div>
+                        <div className='product_details'>
+                            <Link to="/productos" className='product_details_text'> Volver a mis productos</Link>
+                        </div>
+                        
                     </div>
-                    <div className='product_details'>
-                        <Link to="/productos" > volver a mis productos</Link>
-                    </div>
-                    
-                </div>
                 </div>
             </div>
         </div>

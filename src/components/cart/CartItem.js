@@ -40,7 +40,7 @@ const CartItem = (props) => {
             
                 <p>${precio}-</p>
             
-                <button onClick={() => props.removeItem(id)} id='onadd'>Eliminar</button>
+                <button onClick={() => props.removeItem(id)} className='delete-button'>Eliminar</button>
             
                 <p> Total: ${totalPrice}</p>
             
