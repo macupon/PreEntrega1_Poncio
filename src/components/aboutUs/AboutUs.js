@@ -20,7 +20,7 @@ const  AboutUs = () => { //Funcion constructora
     return (
         <div className='nosotros-div'>
             <Helmet>
-                <style>{'body{ background-color: #F8CDDD;}'}</style>
+                <style>{'body{ background-color: #F7D6D0;}'}</style>
             </Helmet>
             <div className='nosotros-img-text'>
                 <div>

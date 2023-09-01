@@ -4,19 +4,27 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-.count_box{
-    border-radius: 10%;
-    flex-direction: column;    
-    max-width: 150px;
+.card_cart {
+    width: 80%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f7e5b9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 90px;
+    
 }
 
-.count_number {
-    display: contents;
-    justify-content: center;
-    font-size: 19px;
-    font-family: 'Balsamiq Sans', cursive;
-    align-items: center;
+.img_cart {
+    padding: 15px;
+    border-radius: 40%;
+    width: 130px;
+}
+
+.title_card_cart {
+    font-family: 'bebas neue';
+    font-size: 38px;
 }
 
 /* .bloque_count button {
@@ -35,15 +43,21 @@
     justify-content: center;
     align-items: center;
     width: 120px;
-    background-color: #ccc0f2;
-    border-color: #ccc0f2;
+    background-color: #f6b8cf92;
+    border-style: none;
     margin-left: 20px;
     margin-right: 20px;
-    color: #14648C;
+    color: #496220;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     border-radius: 110px;
     padding: 15px;
+    transition: 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #f6b8cfe2;
+    color: white;
 }
 
 .button-count-child {
@@ -51,40 +65,46 @@
     align-items: baseline;
 }
 
-.card_cart {
-    width: 80%;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-    gap: 80px 10px;
-    border: 10px;
-    border-color: black;
-    background-color: white;
-    margin-top: 20px;
-    border-radius: 1%;
-    
-}
-
-.img_cart {
-    width: 8%;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 15%;
-    width: 120px;
-}
-
-.title_card_cart {
-    font-family: 'bebas neue';
-    font-size: 30px;
-    width: 110px;
-}
 
 .buttonCountCart{
     align-content: center;
     display: flex;
-    width: 90px;
 }
+
 .buttonCountCart button, .buttonCountCart p {
-    margin: 0 8px; /* Agrega un margen a los elementos para separarlos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    margin: 3px;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 34px;
+	height: 34px;
   }
+
+
+.buttonCountCart button {
+    background-color: #f7b731;
+}
+
+.buttonCountCart button:hover {
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+}
+
+.text_cart {
+    color: #14648C;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.price_cart {
+    font-size: 25px;
+}

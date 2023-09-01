@@ -27,10 +27,9 @@ const CartItem = (props) => {
 
     return(
         <div className='card_cart'>
-        
             <img src={img} className='img_cart' alt=""></img>
             <h5 className='title_card_cart'>{nombre} </h5>
-            <p>Tamaño: {medida} cm</p>
+            <p className='text_cart'>Tamaño: {medida} cm</p>
 
                 <div className='buttonCountCart'>
                     <button onClick={disOne}>-</button>
@@ -38,12 +37,11 @@ const CartItem = (props) => {
                     <button onClick={addOne}>+</button>
                 </div>
             
-                <p>${precio}-</p>
+                <p className='text_cart'>${precio}</p>
             
                 <button onClick={() => props.removeItem(id)} className='delete-button'>Eliminar</button>
             
-                <p> Total: ${totalPrice}</p>
-            
+                <p className='text_cart price_cart'> Total: ${totalPrice}</p>
         </div>
     );
 }
