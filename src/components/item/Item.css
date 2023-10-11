@@ -31,10 +31,11 @@
     border-top-right-radius: 35px;
 }
 
-.card-price{
+.card-price {
     font-size: 40px;
     color: #f7a14b;;
     display: flex;
+    
 }
 
 

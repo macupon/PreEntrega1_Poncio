@@ -2,43 +2,77 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 .totales {
     font-size: 20px;
     font-family:'bebas neue';
-    display: flex;
+}
+
+.div-card-price {
     align-items: center;
-    justify-content:stretch;
+    display: flex;
+    margin: 30px 55px 30px 55px;
 }
 
 .iva {
     font-size: 30px;
-    padding: 20px;
+    padding: 10px;
     
 }
-.container{
+.container {
     display: flex;
     justify-content: center;
-
+    align-items: baseline;
 }
 
-
-#buttoncheck{
-    background-color: #dfe6e9;
-    width: 150px;
-	height: 50px;
-    border-radius: 6%;
-    font-size: 17px;
-    text-align: center;
-    margin-top: 6px;
-    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
-    font-family: 'Balsamiq Sans', cursive;
-
-}
-.checkout{
+.checkout {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
 }
+
+.btn-checkout {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 12px;
+    font-size: 18px;
+    background-color: #ccc0f2;
+    border-style: none;
+    color: #14648C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border-radius: 90px;
+    padding: 35px;
+    transition: 0.3s;
+} 
+
+.btn-checkout button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn-checkout:hover {
+    background-color: #f0b172;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+

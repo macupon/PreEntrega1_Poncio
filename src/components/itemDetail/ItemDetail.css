@@ -4,12 +4,12 @@
     align-items: center;
 }
 
-.button-onadd-div {
+.btn-onadd-div {
     display: flex;
     justify-content: space-around;
     align-items: center;
 } 
-.onadd {
+.btn-onadd {
     display: flex;
     align-items: center;
     width: 150px;
@@ -25,7 +25,7 @@
     margin-bottom: 16px;
     transition: 0.3s;
 }
-.onadd:hover {
+.btn-onadd:hover {
     background-color: #f0b172;
     border: none;
     color: white;

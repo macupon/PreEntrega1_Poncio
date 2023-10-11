@@ -95,8 +95,9 @@ header .navbar {
 .nav-custom-purple:hover .nav-link:hover, .nav-custom-purple:hover .nav-link.active:hover{
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: none;
     text-decoration-style:wavy;
+    margin-bottom: 5px;
 }
 
 /* .nav-custom-purple .nav-link.active {

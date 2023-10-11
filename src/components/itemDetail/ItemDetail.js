@@ -48,10 +48,10 @@ const  ItemDetail = (props) => { //Funcion constructora
                             <p className='card-price'>${precio}.-</p>
                         </div>
                         <p className='card-text'>Tamaño: {medida} cm</p>
-                        <div className='button-onadd-div'>
+                        <div className='btn-onadd-div'>
                             <ItemCount stock={stock} guardarCantidadAComprar={cantidadHijo} />     
                             <div>
-                                <button onClick={clickComprar} className='onadd'>Añadir al carrito</button>
+                                <button onClick={clickComprar} className='btn-onadd'>Añadir al carrito</button>
                             </div>
                         </div>
                         <div className='product_details'>

@@ -75,7 +75,7 @@ const  CheckoutForm = () => { //Funcion constructora
                         <div>
                         <textarea  class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" id="message" placeholder=" Message" required></textarea>
                         </div>
-                        <div className='submit-button-wrapper' >
+                        <div className='submit-btn-wrapper' >
                         
                         <button onClick={sendOrder} id="enviarForm" type="submit" value="Send">Enviar</button>
                         

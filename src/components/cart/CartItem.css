@@ -38,7 +38,7 @@
 	cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
 } */
-.delete-button {
+.delete-btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -55,23 +55,23 @@
     transition: 0.3s;
 }
 
-.delete-button:hover {
+.delete-btn:hover {
     background-color: #f6b8cfe2;
     color: white;
 }
 
-.button-count-child {
+.btn-count-child {
     display: flex;
     align-items: baseline;
 }
 
 
-.buttonCountCart{
+.btn-CountCart{
     align-content: center;
     display: flex;
 }
 
-.buttonCountCart button, .buttonCountCart p {
+.btn-CountCart button, .btn-CountCart p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,21 +88,21 @@
   }
 
 
-.buttonCountCart button {
+.btn-CountCart button {
     background-color: #f7b731;
 }
 
-.buttonCountCart button:hover {
+.btn-CountCart button:hover {
     color: white;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
 }
 
-.text_cart {
+.txt-cart {
     color: #14648C;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 900;
-    font-size: 20px;
-    margin-top: 12px;
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
 
 .price_cart {

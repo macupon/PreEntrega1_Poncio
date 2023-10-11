@@ -38,18 +38,25 @@
                     {itemsCarrito.map((e) => (
                             <CartItem item={e} removeItem={removeItem}/>))}
             </div>
+
                 <div className='totales container'>
-                    <p className='iva'> Subtotal:</p>
-                    <p className='card-price'>${calcularPrecioTotal()*0.8}</p>
-                    <p className='iva'> IVA:</p>
-                    <p className='card-price'>${calcularPrecioTotal()*0.2}</p>
-                    <p className='iva'> Total:</p>
-                    <p className='card-price'>${calcularPrecioTotal()}</p>
-                </div>
+                    <div className='div-card-price'>
+                        <p className='iva'> Subtotal:</p>
+                        <p className='card-price'>${calcularPrecioTotal()*0.8}</p>
+                    </div>
+                    <div className='div-card-price'>
+                        <p className='iva'> IVA:</p>
+                        <p className='card-price'>${calcularPrecioTotal()*0.2}</p>                       
+                    </div>
+                    <div className='div-card-price'>
+                        <p className='iva'> Total:</p>
+                        <p className='card-price'>${calcularPrecioTotal()}</p>
+                    </div>
+                </div> 
 
             <div className='checkout'>
                 <Link to="/checkout">
-                <button component={Link} to="/checkout" className='checkoutButton' id="buttoncheck" >Checkout</button>
+                    <button component={Link} to="/checkout" className='btn-checkout' id="buttoncheck" style={{textDecoration : 'none'}} >Checkout</button>
                 </Link>
             </div>
         </div>

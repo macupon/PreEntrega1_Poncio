@@ -57,11 +57,11 @@
     text-align: center;
   }
   
-  .contact-form .submit-button-wrapper {
+  .contact-form .submit-btn-wrapper {
     text-align: center;
   }
   
-  .contact-form .submit-button-wrapper input {
+  .contact-form .submit-btn-wrapper input {
     border: none;
     border-radius: 4px;
     background-color: #c44569;
@@ -72,7 +72,7 @@
     letter-spacing: 2px;
   }
   
-  .contact-form .submit-button-wrapper input:hover {
+  .contact-form .submit-btn-wrapper input:hover {
     background-color: #d30069;
   }
   .columns_pedido {
@@ -102,6 +102,3 @@
     Display: block;
   }
 
-  .container {
-    align-items:baseline;
-  }

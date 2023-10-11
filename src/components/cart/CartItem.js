@@ -29,19 +29,19 @@ const CartItem = (props) => {
         <div className='card_cart'>
             <img src={img} className='img_cart' alt=""></img>
             <h5 className='title_card_cart'>{nombre} </h5>
-            <p className='text_cart'>Tamaño: {medida} cm</p>
+            <p className='txt-cart'>Tamaño: {medida} cm</p>
 
-                <div className='buttonCountCart'>
+                <div className='btn-CountCart'>
                     <button onClick={disOne}>-</button>
                     <p>{count}</p>
                     <button onClick={addOne}>+</button>
                 </div>
             
-                <p className='text_cart'>${precio}</p>
+                <p className='txt-cart'>${precio}</p>
             
-                <button onClick={() => props.removeItem(id)} className='delete-button'>Eliminar</button>
-            
-                <p className='text_cart price_cart'> Total: ${totalPrice}</p>
+                <button onClick={() => props.removeItem(id)} className='delete-btn'>Eliminar</button>
+
+                <p className='txt-cart price_cart'> Total: ${totalPrice}</p>
         </div>
     );
 }
