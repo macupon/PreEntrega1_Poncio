@@ -5,9 +5,9 @@
 	box-sizing: border-box;
 }
 .card_cart {
-    width: 80%;
+    width: 86vw;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: #f7e5b9;
     margin-top: 20px;
@@ -23,6 +23,8 @@
 }
 
 .title_card_cart {
+    margin-bottom: 0px;
+    width: 120px;
     font-family: 'bebas neue';
     font-size: 38px;
 }
@@ -45,8 +47,6 @@
     width: 120px;
     background-color: #f6b8cf92;
     border-style: none;
-    margin-left: 20px;
-    margin-right: 20px;
     color: #496220;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
@@ -106,5 +106,6 @@
 }
 
 .price_cart {
+    width: 190px;
     font-size: 25px;
 }

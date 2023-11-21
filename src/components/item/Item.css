@@ -32,10 +32,8 @@
 }
 
 .card-price {
-    font-size: 40px;
-    color: #f7a14b;;
-    display: flex;
-    
+    font-size: 50px;
+    color: #f7b731;
 }
 
 
@@ -65,5 +63,6 @@
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    margin-left: 20px;
+    margin-top: 10px;
+    letter-spacing: 1px;
 }

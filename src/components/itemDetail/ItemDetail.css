@@ -6,12 +6,15 @@
 
 .btn-onadd-div {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 } 
-.btn-onadd {
+.btn-onadd, .btn-checkout {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 150px;
     height: 12px;
     font-size: 18px;
@@ -24,6 +27,7 @@
     padding: 35px;
     margin-bottom: 16px;
     transition: 0.3s;
+    text-decoration: none;
 }
 .btn-onadd:hover {
     background-color: #f0b172;

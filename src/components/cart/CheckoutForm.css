@@ -1,104 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
 
-.contact-form-wrapper {
-    padding: 20px 0;
-  }
+.div-checkout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.columns_pedido {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  background-color: white;
+  border-radius: 30px;
+  height: auto;
+  width: auto;
+}
+
+.div-title-checkout {
+  display: flex;
+  justify-content: left;
+  margin-left: 35px;
+  align-items: center;
+}
+
+.title-checkout {
+  font-family: 'Grand Hotel', cursive;
+  color: #f0b172;
+  font-size: 60px;
+}
+
+/* .line-1 {
+  height: 3px;
+  background: rgb(160, 6, 169);
+}
+
+.line-2 {
+  border-left: 3px solid rgb(160, 6, 169);
+  height: 385px;
+  position: absolute;
+  left: 50vw;
+} */
+
+.div-form-resumen {
+  display: flex;
+  justify-content: space-evenly;
+  align-items:baseline;
+  justify-content: center;
+  padding: 1vw;
+}
+
+.div-resumenPedido {
+  display: flex;
+  justify-content: left;
+  padding: 1vw;
+}
+
+.title-resumen, .form-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #14648C;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.resumen {
+  font-family: 'Montserrat', sans-serif;
+  color: #14648C;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.div-contact-form {
+  display: flex;
+  justify-content: right;
+  padding: 2vw;
+}
   
-.contact-form {
-    padding: 30px 40px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    max-width: 400px;
-  }
-.textarea{
-    resize: none;
-}
-.form-text-area {
-    background-color: #f0f4f5;
-    height: auto;
-    padding-left: 16px;
-}
 .form-control::placeholder {
-    color: #aeb4b9;
-    font-weight: 500;
-    opacity: 1;
-}
-.form-control:-ms-input-placeholder {
-    color: #aeb4b9;
-    font-weight: 500;
-}
-.form-control:focus {
-    border-color: #c44569;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+  color: #aeb4b9;
+  font-weight: 900;
+  opacity: 1;
 }
           
-  
-  
-  
-  .contact-form .form-input,
-  .form-text-area {
-    background-color: #f0f4f5;
-    height: 50px;
-    padding-left: 16px;
-  }
-  
-  
-  
-  .contact-form .title {
-    font-family: 'bebas neue';
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-  }
-  
-  .contact-form .description {
-    color: #aeb4b9;
-    font-size: 14px;
-    text-align: center;
-  }
-  
-  .contact-form .submit-btn-wrapper {
-    text-align: center;
-  }
-  
-  .contact-form .submit-btn-wrapper input {
-    border: none;
-    border-radius: 4px;
-    background-color: #c44569;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px 60px;
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
-  
-  .contact-form .submit-btn-wrapper input:hover {
-    background-color: #d30069;
-  }
-  .columns_pedido {
-    display: grid;
-    flex-direction: row;
+.contact-form .form-input,
+.form-text-area {
+  background-color: #f0f4f5;
+  height: 50px;
+}
 
-  }
-  .resumen {
-    font-size: 20px;
-    margin-left: 15px;
-  }
+.contact-form {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
 
-  .tituloPedido {
-    font-family: 'bebas neue';
-    font-size: 30px;
-    color: darkorange;
-    margin: 20px;
-  }
-  .containerResumenPedido{
-    flex-wrap: wrap;
-    align-items:baseline;
-    background-color: white;
-    font-family:'bebas neue';
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 400px;
-    Display: block;
-  }
+.contact-form .description {
+  color: #aeb4b9;
+}
 
+.div-btn-enviar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.btn-enviar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 12px;
+  font-size: 18px;
+  background-color: #ccc0f2;
+  border-style: none;
+  color: #14648C;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  border-radius: 90px;
+  padding: 35px;
+  margin-top: 20px;
+  transition: 0.3s;
+}

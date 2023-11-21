@@ -1,47 +1,47 @@
-/* ####################################################
-                    IMPORTACIONES
-######################################################*/
-// Modulos
-// import { doc, QuerySnapshot } from 'firebase/firestore';
-// import { useEffect } from 'react';
-// import { getFirestore } from '../../services/firebase.js';
-// Estilos
-import './Home.css'
+// /* ####################################################
+//                     IMPORTACIONES
+// ######################################################*/
+// // Modulos
+// // import { doc, QuerySnapshot } from 'firebase/firestore';
+// // import { useEffect } from 'react';
+// // import { getFirestore } from '../../services/firebase.js';
+// // Estilos
+// import './Home.css'
 
-// Componentes
+// // Componentes
 
-// Core
+// // Core
 
-/* ####################################################
-                    LOGICA
-######################################################*/
-const  Home = () => { //Funcion constructora
-    // retorno que se va a randerizar
-// useEffect (()=>{
+// /* ####################################################
+//                     LOGICA
+// ######################################################*/
+// const  Home = () => { //Funcion constructora
+//     // retorno que se va a randerizar
+// // useEffect (()=>{
 
-// const db = getFirestore()
-// const apliques = db.collection('apliquesMarian')
+// // const db = getFirestore()
+// // const apliques = db.collection('apliquesMarian')
 
-// const apliquesFiltrados = apliques.where('stock','>',0)
+// // const apliquesFiltrados = apliques.where('stock','>',0)
 
-// apliquesFiltrados.get().then((querySnapshot) => {
-// if(querySnapshot.size===0){
-//     console.log("Error");
+// // apliquesFiltrados.get().then((querySnapshot) => {
+// // if(querySnapshot.size===0){
+// //     console.log("Error");
+// // }
+// // console.log(querySnapshot.doc.map({...doc.data(), id:doc.id}));
+// // })
+
+// // },[])
+
+//     return (
+//        <p>
+
+//        </p>
+//     )
 // }
-// console.log(querySnapshot.doc.map({...doc.data(), id:doc.id}));
-// })
-
-// },[])
-
-    return (
-       <p>
-
-       </p>
-    )
-}
 
 
-/* ####################################################
-                    EXPORTACIONES
-######################################################*/
-export default Home
+// /* ####################################################
+//                     EXPORTACIONES
+// ######################################################*/
+// export default Home

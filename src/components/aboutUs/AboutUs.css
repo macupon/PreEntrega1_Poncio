@@ -1,6 +1,6 @@
 
 .nosotros-div {
-    height: 700px;
+    height: 500px;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 .nosotros-img {
-    width: 550px;
+    width: 450px;
     transition: transform .4s;
 }
 
@@ -41,7 +41,7 @@
     width: 500px;
     padding: 15px;
     margin: 20px;
-    height: 450px;
+    height: 350px;
     border-radius: 90px;
     transition: transform .4s;
 }
@@ -50,6 +50,6 @@
     transform: scale(1.1);
 }
 
-@media only screen and (max-width: 2000px) and (min-width: 1366px) {  
+@media only screen and (max-width: 320px) and (min-width: 480px) {  
   
 }

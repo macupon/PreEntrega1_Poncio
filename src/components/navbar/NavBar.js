@@ -20,10 +20,8 @@ const NavBar = (props) => {
   //Funcion constructora
   // retorno que se va a randerizar
   return (
-    <header className="row">
-      <nav className="navbar navbar-expand-lg nav-custom-purple col-7">
-        
-        {/* <h1 className="apliques-title col-4">Apliques Marian <FaStar size={20}/> </h1>  */}
+    <header>
+      <nav className="navbar navbar-expand-lg nav-custom-purple">
         <h1 className='apliques-title col-4'>
           <span className='char1'>A</span>
           <span className='char2'>p</span>
@@ -43,34 +41,17 @@ const NavBar = (props) => {
           <span className='char8'> </span>
           <span className='char15'><FaStar size={20}/></span>
         </h1>
-        <div className="container-fluid">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="faStar"><FaStar size={9}/></li>
-              <li className="nav-item">
-                <Link className="nav-link  px-3" aria-current="page" to="/">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link  px-3" aria-current="page" to="/nosotros">Nosotros</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link  px-3" aria-current="page" to="/productos">Productos</Link>
-              </li>
-              <li className="faStar"><FaStar size={9}/></li>
-            </ul>
-          </div>
-        </div>
-      <CardWidget/>
+        <ul className="navbar-nav">
+          <li className="faStar"><FaStar size={9}/></li>
+          <li className="nav-item">
+            <Link className="nav-link  px-3" aria-current="page" to="/nosotros">Nosotros</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link  px-3" aria-current="page" to="/productos">Productos</Link>
+          </li>
+          <li className="faStar"><FaStar size={9}/></li>
+        </ul>
+          <CardWidget/>
       </nav>
     </header>
   );

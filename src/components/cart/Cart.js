@@ -55,8 +55,8 @@
                 </div> 
 
             <div className='checkout'>
-                <Link to="/checkout">
-                    <button component={Link} to="/checkout" className='btn-checkout' id="buttoncheck" style={{textDecoration : 'none'}} >Checkout</button>
+                <Link to="/checkout" style={{ textDecoration: 'none' }}>
+                    <button component={Link} to="/checkout" className='btn-checkout' id="buttoncheck">Checkout</button>
                 </Link>
             </div>
         </div>

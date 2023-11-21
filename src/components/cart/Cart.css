@@ -34,7 +34,9 @@ p {
 .container {
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+    margin-right: none;
+    margin-left: none;
 }
 
 .checkout {
@@ -43,7 +45,7 @@ p {
     justify-content: center;
 }
 
-.btn-checkout {
+/* .btn-checkout {
     display: flex;
     align-items: center;
     width: 150px;
@@ -57,7 +59,7 @@ p {
     border-radius: 90px;
     padding: 35px;
     transition: 0.3s;
-} 
+}  */
 
 .btn-checkout button {
     background: none;

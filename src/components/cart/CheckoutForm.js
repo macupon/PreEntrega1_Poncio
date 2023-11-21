@@ -49,41 +49,54 @@ const  CheckoutForm = () => { //Funcion constructora
 
     // retorno que se va a randerizar
     return (
-        
-            <div className=' columns_pedido container'>
-                <div className='containerResumenPedido container'>
-                    <p className='tituloPedido'>Resumen de su Pedido</p>
-                    <div className='resumen'>
+        <main>
+            <div className='div-checkout'>
+                <div className='columns_pedido'>
+                    <div className='div-title-checkout'>
+                        <p className='title-checkout'>Gracias por su pedido! </p>
+                    </div>
+
+                    <div>
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                    </div>
+
+                    <div className='div-form-resumen'>
+                        <div className='div-resumenPedido'>
+                            <div className='resumen'>
+                                <h5 className='title-resumen' id="contactmilo">Resumen de su pedido</h5>
+                                <p>{itemsCarrito.map((e)=> (<span> {(e.quantity)} x {(e.nombre)} <br/> </span>))}</p>
+                                <p>Total a Pagar: ${calcularPrecioTotal()}</p>
+                                <div>
+                                    <p>Su número es:<br/> {orderID}</p>
+                                </div>
+                            </div>
+                        </div>
                         
-                        <p>{itemsCarrito.map((e)=> (<span> {(e.quantity)} x {(e.nombre)} <br/> </span>))}</p>
-                        <p>Total a Pagar: ${calcularPrecioTotal()}</p>
-                        <div>
-                        <p>Su número es:<br/> {orderID}</p>
+                        <div className='div-contact-form'>
+                            <form action="#" className='contact-form' id="sendForm">
+                                <h4 className='form-title' id="contactmilo">Complete con sus datos</h4>
+                                <div>
+                                    <input type="text" className='form-control rounded border-white mb-3 form-input'id="name" placeholder="Name" required/>
+                                </div>
+                                <div>
+                                    <input type="email" className='form-control rounded border-white mb-3 form-input' id="emailForm" placeholder=" Email" required/>
+                                </div>
+                                <div>
+                                    <textarea  class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" id="message" placeholder=" Message" required></textarea>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                
-                <div  data-aos="fade-up" className='contact-form-wrapper d-flex justify-content-center'>
-                    <form action="#" className='contact-form' id="sendForm">
-                        <h5 className='title' id="contactmilo">Enviar Pedido</h5>
-                        <div>
-                        <input type="text" className='form-control rounded border-white mb-3 form-input'id="name" placeholder="Name" required/>
-                        </div>
-                        <div>
-                        <input type="email" className='form-control rounded border-white mb-3 form-input' id="emailForm" placeholder=" Email" required/>
-                        </div>
-                        <div>
-                        <textarea  class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" id="message" placeholder=" Message" required></textarea>
-                        </div>
-                        <div className='submit-btn-wrapper' >
-                        
-                        <button onClick={sendOrder} id="enviarForm" type="submit" value="Send">Enviar</button>
-                        
-                        </div>
-                    </form>
-                </div>
             </div>
-               
+
+
+            <div className='div-btn-enviar' >
+                <button onClick={sendOrder} className='btn-enviar' id="enviarForm" type="submit" value="Send">Enviar 😊</button>
+            </div>
+
+        </main>    
         
     )
 }
